@@ -1,17 +1,24 @@
-class Human:
+# 1) 사람 클래스
+class Person:
+    # 이름, 나이, 성별
+    # name, age, gender
+    # 1-1) 새로 만들 때 입력
     def __init__(self, name, age, gender):
         self.name = name
         self.age = age
         self.gender = gender
 
-class Workmate(Human):
-    def __init__(self, name, age, gender, grade):
-        self.name = name
-        self.age = age
-        self.gender = gender
-        self.grade = grade
+# 2) 직장 동료 클래스
+# 상속
+class Colleague(Person):
+    # 2-1) 기본 직급 대리
+    # position = "대리"
+    # 2-2) 새로 만들 때 입력
+    def __init__(self, name, age, gender, position):
+        super().__init__(name, age, gender)
+        self.position = position
 
-person1 = Human("홍길동", "25", "남자")
-mate1 = Workmate("김철수", "30", "남자", "대리")
-print(person1.name)
-print(mate1.age)
+# colleague = Colleague("pirenzy", "25", "Male")
+# print(colleague.name)
+colleague = Colleague("pirenzy", "25", "Male", "대리")
+print(colleague.__dict__)
