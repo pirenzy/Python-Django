@@ -16,7 +16,7 @@ print(a == True)
 print(a is True)
 
 # if
-d = 7
+d = 8
 if d > 10:
     print("숫자는 10보다 큽니다.")
 elif d > 5 and d <=10:
