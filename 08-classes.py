@@ -21,7 +21,7 @@ view_count3 = 0
 #     title = "개발"
 #     author = "피렌지"
 #     content = "개발은 쉬워요"
-#     view_count = 0
+#     view_countgi = 0
 
 # article1 = Article()
 # print(article1.title)
